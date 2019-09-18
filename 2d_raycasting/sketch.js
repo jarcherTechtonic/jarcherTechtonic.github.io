@@ -5,7 +5,7 @@ let xoff = 0;
 let yoff = 10000;
 const sceneW = 400;
 const sceneH = 400;
-const scene = [];
+let scene = [];
 
 function setup() {
   createCanvas(800, 400);

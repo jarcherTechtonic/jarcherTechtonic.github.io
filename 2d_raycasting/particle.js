@@ -12,7 +12,7 @@ class Particle {
   }
 
   look(walls) {
-    const scene = [];
+    let scene = [];
     for (let ray of this.rays) {
       let closest = null;
       let record = Infinity;
@@ -30,7 +30,7 @@ class Particle {
         stroke(255, 100);
         line(this.pos.x, this.pos.y, closest.x, closest.y);
       } 
-      scene[i] = record;
+      this.scene = record;
     }
   }
 
